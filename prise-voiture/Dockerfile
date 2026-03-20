@@ -1,7 +1,7 @@
 ARG BUILD_FROM=ghcr.io/hassio-addons/base:15.0.5
 FROM ${BUILD_FROM}
 
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8
 
 WORKDIR /usr/src/app
 
