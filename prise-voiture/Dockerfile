@@ -1,4 +1,5 @@
-FROM ghcr.io/home-assistant/aarch64-base-python:3.12
+ARG BUILD_FROM
+FROM ${BUILD_FROM}
 
 ENV LANG=C.UTF-8
 
