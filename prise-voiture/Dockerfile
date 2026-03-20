@@ -12,9 +12,7 @@ COPY requirements.txt .
 RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
 COPY app.py .
-COPY run.sh .
-RUN chmod a+x /usr/src/app/run.sh
 
-EXPOSE 8000
+COPY rootfs /
 
-CMD ["/usr/src/app/run.sh"]
+CMD ["/init"]
